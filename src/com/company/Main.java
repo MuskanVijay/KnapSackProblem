@@ -1,5 +1,4 @@
-package com.company;
-class Main {
+public class Main {
     static int max(int a, int b) { return (a > b) ? a : b; }
     static int knapSack(int W, int wt[], int val[], int n)
     {
@@ -13,12 +12,12 @@ class Main {
                             val, n - 1),
                     knapSack(W, wt, val, n - 1));
     }
-    public static void main(String args[])
-    {
+    public static void main(String[] args) {
+
         int profit[] = new int[] { 3, 4, 5 ,6 };
         int weight[] = new int[] { 2, 3, 4 ,5 };
         int W = 5;
         int n = 4;
         System.out.println(knapSack(W, weight, profit, n));
+        }
     }
-}
